@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tutorial 01 - Natalie Diva K</title>
+  </head>
+  <body>
+    <img src="assets/images/header.jpeg"  width="100%" height="200" alt="header">
+    <h2>
+      MODUL 02 - HTML & GIT <br />
+      ABP IF-45-04
+    </h2>
+
+    <!--General Info-->
+    <ol>
+      <li>Nama: Natalie Diva K.</li>
+      <li>NIM: 1301213308</li>
+      <li>Kelas: IF-45-04</li>
+    </ol>
+    
+    <hr />
+    <h3>Tentang Saya</h3>
+    <p>Perkenalkan, nama saya Natalie/Diva dari kelas IF-45-04.</p>
+      <table width="75%" height="50%" border="1">
+        <tr style="background-color: lightsteelblue">
+          <th rowspan="2">
+            <b>Nama Lengkap</b>
+          </th>
+          <th rowspan="2">
+            <b>Tanggal Lahir</b>
+          </th>
+          <th colspan="2">
+            <b>Pendidikan</b>
+          </th>
+          <th rowspan="2">
+            <b>Hobi</b>
+          </th>
+          <th rowspan="2">
+            <b>Lagu Favorit</b>
+          </th>
+        </tr>
+        <tr style="background-color: lightsteelblue">
+          <th><b>SMA</b></th>
+          <th><b>Kuliah</b></th>
+        </tr>
+        <tr>
+          <td>Natalie Diva Krisantya</td>
+          <td>25 Desember 2002</td>
+          <td>SMA St.Angela</td>
+          <td>Universitas Telkom</td>
+          <td>Bernyanyi</td>
+          <td><audio controls>
+            <source src="assets/audio/Kasih - Putut Pudyantoro (Official Instrument).mp3" type="audio/mpeg">   Your browser does not support the audio element.
+          </audio></td>
+        </tr>
+      </table>
+
+    <hr />
+
+    <h3><i>Connect with Me</i></h3>
+    <ul>
+      <li>
+        <a href="https://linkedin.com/in/natalie-diva-krisantya/">
+          <img src="assets/icons/linkedin-logo.svg" alt="LinkedIn" width="30" />
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/nataliedk/">
+          <img src="assets/icons/github-logo.svg" alt="GitHub" width="30" />
+        </a>
+      </li>
+      <li>Kirim Pesan:</li>
+      <form action="" method="post">
+      <div >
+
+        <table border="0"  >
+          <tr >
+            <td>Nama:</td>
+            <td >
+              <input
+                type="text"
+                name="nama_input"
+                class="text-field"
+                id="id_nama"
+                placeholder="Nama Pengirim"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <input
+                type="email"
+                name="email_input"
+                class="text-field"
+                id="id_email"
+                placeholder="Email Pengirim"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin:</td>
+            <td>
+              <input 
+              type="radio"
+              name="jk_input"
+              class="radioB"
+              id="jk1"
+              value="Pria"
+              >Pria</input>
+              <input 
+              type="radio"
+              name="jk_input"
+              class="radioB"
+              id="jk2"
+              value="Wanita"
+              >Wanita</input>
+            </td>
+          </tr>
+          <tr>
+            <td>Pekerjaan:</td>
+            <td>
+            <select 
+              name="p_input" 
+              class="dropdown"
+              id="id_pekerjaan">
+            <option value="" selected>--Pilih--</option>
+            <option value="Mahasiswa/i">Mahasiswa/i</option>
+            <option value="Dosen">Dosen</option>
+            </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Subjek Pesan:</td>
+            <td>
+              <input 
+              type="checkbox"
+              name="subjek_input"
+              class="checkbox"
+              id="id_subjek"
+              value="Kritik"
+              >Kritik</input>
+              <input 
+              type="checkbox"
+              name="subjek_input"
+              class="checkbox"
+              id="id_subjek"
+              value="Saran"
+              >Saran</input>
+            </td>
+          </tr>
+          <tr>
+            <td>Pesan:</td>
+            <td>
+              <textarea rows="5" cols="40%"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td  colspan="3" align="right">
+              <button 
+              type="button"
+              name="b_cancel"
+              class="btnCancel"
+              id="id_cnc"
+              value="Cancel"
+              >
+            Cancel</button>
+            <input 
+            type="Submit"
+            name="b_submit"
+            class="btnSubmit"
+            id="id_sub"
+            value="Submit"
+            >
+            </td>
+          </tr>
+        </table>
+      </div>
+      </form>
+    </ul>
+  </body>
+</html>
