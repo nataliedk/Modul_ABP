@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: white;
+        margin: 0;
+      }
+    </style>
+
+    <title>Book</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img
+          style="width: 40px; height: 40px"
+          src="assets/img/serving-dish.png"
+          alt="ReadyServe"
+        />
+      </div>
+
+      <div class="nav-menu">
+        <a href="/" class="menu-active">Home</a>
+        <a href="/about" class="menu-inactive">About</a>
+        <a href="/menu" class="menu-inactive">Menu</a>
+        <a href="/book">
+          <button
+            type="button"
+            class="btn"
+            style="background-color: aliceblue; color: black"
+          >
+            BOOK
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <!--Table Hover Style -->
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Package</th>
+          <th scope="col">Menu</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Entrie</td>
+          <td>Appetizer, Main</td>
+          <td>$1000</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Saire</td>
+          <td>Appetizer, Main Course, Dessert</td>
+          <td>$1500</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Frontier</td>
+          <td>Full Course</td>
+          <td>$3000</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
