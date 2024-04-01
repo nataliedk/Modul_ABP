@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book</title>
+    <!--Natalie Diva Krisantya (1301213308) - IF4504-->
+
+    <!-- css -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="book.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <!-- js to hide & show table -->
+    <script>
+      $(document).ready(function () {
+        $("#toggle").click(function () {
+          $("#package-table").toggle();
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-logo">
+        <img
+          style="width: 40px; height: 40px"
+          src="assets/img/serving-dish.png"
+          alt="ReadyServe"
+        />
+      </div>
+
+      <div class="nav-menu">
+        <a href="/" class="menu:hover" style="color: mintcream">Home</a>
+        <a href="/about.html" class="menu:hover" style="color: mintcream"
+          >About</a
+        >
+        <a href="/menu.html" class="menu:hover" style="color: mintcream"
+          >Menu</a
+        >
+        <a href="/book.html">
+          <button
+            type="button"
+            class="btn"
+            style="background-color: aliceblue; color: black"
+          >
+            BOOK
+          </button>
+        </a>
+      </div>
+    </nav>
+<!--Natalie Diva Krisantya (1301213308) - IF4504-->
+    <div class="book">
+      <!-- Reservation Form -->
+    <div>
+      <h3>Reserve Your Table</h3>
+      <form action="" method="post">
+        <div>
+          <table style=" border: 0;"  >
+            <tr >
+              <td>Full Name:</td>
+              <td >
+                <input
+                  type="text"
+                  name="full-name_input"
+                  class="text-field"
+                  id="id_full-name"
+                  placeholder="Full Name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Diners:</td>
+              <td>
+                <input type="radio" name="p_input" class="radio" id="package1" value="1" checked>
+                <label for="package1">1</label>
+                
+                <input type="radio" name="p_input" class="radio" id="package2" value="2">
+                <label for="package2">2</label>
+                
+                <input type="radio" name="p_input" class="radio" id="package3" value="3">
+                <label for="package3">4</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Package:</td>
+              <td>
+              <select 
+                name="p_input" 
+                class="dropdown"
+                id="id_package">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="9">10</option>
+              </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Book for:</td>
+              <td>
+                <input 
+                type="checkbox"
+                name="time_input"
+                class="checkbox"
+                id="id_book-time"
+                value="6 PM"
+                >6 PM</input>
+                <input 
+                type="checkbox"
+                name="time_input"
+                class="checkbox"
+                id="id_book-time"
+                value="7 PM"
+                >7 PM</input>
+                <input 
+                type="checkbox"
+                name="time_input"
+                class="checkbox"
+                id="id_book-time"
+                value="8 PM"
+                >8 PM</input>
+              </td>
+            </tr> <!--Natalie Diva Krisantya (1301213308) - IF4504-->
+            <tr>
+              <td>Notes:</td>
+              <td>
+                <textarea rows="5" cols="40%"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3" style="text-align: right;">
+                <input 
+                  type="submit"
+                  name="b_submit"
+                  class="btnSubmit"
+                  id="id_sub"
+                  value="Submit"
+                >
+              </td>
+            </tr>            
+          </table>
+        </div>
+        </form>
+    </div>
+
+    <!-- Calculator -->
+    <div>
+      <h3>Check Total Price</h3>
+      <input type="text" id="display" readonly style="width: 215px;">
+      <br>
+      <input type="button" value="1" onclick="addToDisplay('1')">
+      <input type="button" value="2" onclick="addToDisplay('2')">
+      <input type="button" value="3" onclick="addToDisplay('3')">
+      <input type="button" value="+" onclick="addToDisplay('+')">
+      <br>
+      <input type="button" value="4" onclick="addToDisplay('4')">
+      <input type="button" value="5" onclick="addToDisplay('5')">
+      <input type="button" value="6" onclick="addToDisplay('6')">
+      <input type="button" value="-" onclick="addToDisplay('-')">
+      <br>
+      <input type="button" value="7" onclick="addToDisplay('7')">
+      <input type="button" value="8" onclick="addToDisplay('8')">
+      <input type="button" value="9" onclick="addToDisplay('9')">
+      <input type="button" value="*" onclick="addToDisplay('*')">
+      <br>
+      <input type="button" value="C" onclick="clearDisplay()">
+      <input type="button" value="0" onclick="addToDisplay('0')">
+      <input type="button" value="=" onclick="calculate()">
+      <input type="button" value="/" onclick="addToDisplay('/')">
+      <br>
+    </div>
+    <div>Natalie Diva K (1301213308) - IF4504</div>
+    </div>
+
+    <!-- hide-show button -->
+    <div style="margin-left: 35px;">
+      <h4>Click to View</h4>
+      <button id="toggle" type="button" class="btn button-package">
+        <b>Our Package List</b>
+      </button>
+    </div>
+
+    <!--Table (Hover Style) -->
+    <div>
+      <table id="package-table" class="table table-hover" style="margin: 35px">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Package</th>
+            <th scope="col">Details</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>R</td>
+            <td>Starter, Main Course</td>
+            <td>$40</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>E1</td>
+            <td>Starter, Main Course, Dessert</td>
+            <td>$55</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>A</td>
+            <td>Appetizer, Soup/Salad, Main Course, Dessert</td>
+            <td>$70</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>D</td>
+            <td>Amuse-Bouche, Appetizer, Salad, Main Course, Dessert</td>
+            <td>$85</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Y</td>
+            <td>Amuse-Bouche, Appetizer, Soup, Main Course, Dessert</td>
+            <td>$90</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>S</td>
+            <td>
+              Amuse-Bouche, Appetizer, Soup, Fish Course, Main Course, Dessert
+            </td>
+            <td>$110</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>E2</td>
+            <td>
+              Amuse-Bouche, Appetizer, Soup, Meat Course, Main Course, Dessert
+            </td>
+            <td>$120</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>R</td>
+            <td>
+              Amuse-Bouche, Appetizer, Soup, Fish Course, Main Course, Cheese
+              Course, Dessert
+            </td>
+            <td>$135</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>V</td>
+            <td>
+              Amuse-Bouche, Appetizer, Soup, Meat Course, Main Course, Cheese
+              Course, Dessert
+            </td>
+            <td>$145</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>E3</td>
+            <td>
+              Amuse-Bouche, Appetizer, Soup, Fish Course, Main Course, Cheese
+              Course, Sorbet, Dessert
+            </td>
+            <td>$160</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

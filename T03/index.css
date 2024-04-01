@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 1440px;
+  padding: 15px;
+  background-color: teal;
+  z-index: 10;
+}
+
+.nav-logo {
+  padding-left: 47px;
+  padding-top: 10px;
+}
+
+.nav-menu {
+  padding-left: 850px;
+  justify-content: space-between;
+}
+
+.nav-menu a {
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+.menu-active {
+  color: white;
+  text-decoration: underline;
+}
+
+.menu:hover {
+  border-bottom: 1px solid white;
+}
+
+.menu-inactive {
+  color: mintcream;
+}
+
+.menu-inactive:hover {
+  text-decoration: underline;
+}
+
+.header-backimg {
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 10);
+}
+
+.greet {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-size: 100px;
+  font-weight: 100;
+  font-style: italic;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.greet.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sub {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-size: 20px;
+  font-weight: 30;
+  font-style: italic;
+  color: white;
+  z-index: 10;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.sub.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.greet-r {
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 1000px;
+  left: 1368px;
+  top: 262px;
+  transform: translateY(-100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.greet-r.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.greet-l {
+  display: inline-block;
+  position: absolute;
+  width: 19px;
+  height: 1000px;
+  left: 1344px;
+  top: 262px;
+  transform: translateY(100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.greet-l.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.greet-l,
+.greet-r {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+}
